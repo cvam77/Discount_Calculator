@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#DDB0A0"
+    android:gravity="center"
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_weight="1"
+       android:gravity="center"
+      >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Discount Calculator"
+          android:textStyle="italic"
+          android:textColor="#212121"
+          android:fontFamily="monospace"
+          android:padding="15dp"
+          android:textSize="30sp"
+          android:background="@drawable/title_rounded_corner"
+          />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:text="- To find out sale price, cost price and discount amount!"
+          android:textSize="25sp"
+          android:layout_marginLeft="30dp"
+          android:layout_marginTop="10dp"
+          android:textColor="#212121"
+          android:fontFamily="cursive"
+          />
+   </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:background="@drawable/rounded_corner"
+       android:gravity="center"
+       android:orientation="vertical">
+
+
+      <Spinner
+          android:id="@+id/spinner_app"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="20dp" />
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:orientation="horizontal">
+
+         <TextView
+             android:id="@+id/discount_percent"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="10dp"
+             android:text="Discount: % "
+             android:background="#BDBDBD"
+             android:textSize="24sp"
+             android:textColor="#263238"
+             android:padding="8dp"
+             />
+
+         <EditText
+             android:id="@+id/discount_percent_edittext"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="10dp"
+             android:hint="percent"
+             android:textSize="20sp"
+             android:inputType="number"
+             />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:orientation="horizontal">
+
+         <TextView
+             android:id="@+id/list_price"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="10dp"
+             android:text="List Price: $ "
+             android:background="#BDBDBD"
+             android:textSize="23sp"
+             android:textColor="#263238"
+             android:padding="8dp"/>
+
+         <EditText
+             android:id="@+id/list_price_edittext"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="5dp"
+             android:hint="amount"
+             android:inputType="number" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:orientation="horizontal">
+
+         <TextView
+             android:id="@+id/sale_price"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="10dp"
+             android:text="Sale Price: $ "
+             android:background="#BDBDBD"
+             android:textSize="22sp"
+             android:textColor="#263238"
+             android:padding="8dp"/>
+
+         <EditText
+             android:id="@+id/sale_price_edittext"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="5dp"
+             android:hint="amount"
+             android:inputType="number" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:orientation="horizontal">
+
+         <Button
+             android:id="@+id/clear_button"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="10dp"
+             android:text="CLEAR" />
+
+         <Button
+             android:id="@+id/calculate_button"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="10dp"
+             android:text="CALCULATE" />
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/results"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:text="Your Results!"
+          android:textSize="20sp"
+          android:fontFamily="serif"
+          android:background="@drawable/results_background"
+         android:padding="10dp"
+          android:textStyle="italic"
+          android:textColor="#000000"
+          />
+
+   </LinearLayout>
+
+
+</LinearLayout>

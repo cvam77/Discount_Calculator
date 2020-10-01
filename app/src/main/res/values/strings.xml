@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Modern_Programming_HW1</string>
+
+    <string-array name="array">
+        <item>List Price</item>
+        <item>Discount</item>
+        <item>Sale Price</item>
+    </string-array>
+
+    <string-array name="arrayForDiscount">
+        <item>Discount</item>
+        <item>Sale Price</item>
+        <item>List Price</item>
+    </string-array>
+
+    <string-array name="arrayForSalePrice">
+        <item>Sale Price</item>
+        <item>List Price</item>
+        <item>Discount</item>
+    </string-array>
+</resources>
